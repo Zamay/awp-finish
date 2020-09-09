@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)https://mt.inotia.life/ru/pwa/mt?campaign=%7B%7Bcampaign.name%7D%7D&adset=%7B%7Badset.name%7D%7D&ad=%7B%7Bad.name%7D%7D -->
+<html lang="ru" translate="no">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <meta name="google" value="notranslate">
+
+    <title>PWA</title>
+    <link rel="manifest" href="https://mt.inotia.life/ru/pwa/mt/manifest.json?t=1596807035">
+    <link rel="apple-touch-icon" href="https://mt.inotia.life/storage/pwa-builds/858/pwa/icon/manifest-icon-192.png?t=1596807035">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://mt.inotia.life/storage/pwa-builds/858/pwa/icon/manifest-icon-152.png?t=1596807035">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://mt.inotia.life/storage/pwa-builds/858/pwa/icon/manifest-icon-180.png?t=1596807035">
+    <link rel="apple-touch-icon" sizes="167x167" href="https://mt.inotia.life/storage/pwa-builds/858/pwa/icon/manifest-icon-167.png?t=1596807035">
+    <link rel="apple-touch-startup-image" href="https://mt.inotia.life/storage/pwa-builds/858/pwa/icon/apple-splash-1125-2436.png?t=1596807035">
+    <meta name="apple-mobile-web-app-title" content="PWA">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="js13kpwa.webmanifest">
+    <link rel="stylesheet" href="./css/cssi" media="all">
+    <link rel="stylesheet" href="./css/index.css" media="all">  
+    <link rel="stylesheet" href="./css/pwa.css">
+    <link rel="stylesheet" href="./css/lightgallery.min.css" media="all">
+
+    <script src="main.js" defer></script>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+	<script>
+		// window.OneSignal = window.OneSignal || [];
+		// OneSignal.push(function() {
+		// 	OneSignal.init({
+		// 	appId: "2e043b1b-676e-4405-9183-f5e1804cc914",
+		// 	});
+        // });
+	</script>
+    <style type="text/css">
+        /* fallback */
+         @font-face {
+         font-family: 'Material Icons';
+         font-style: normal;
+         font-weight: 400;
+         font-display: swap;
+         src: url(https://fonts.gstatic.com/s/materialicons/v55/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+         }
+ 
+         .material-icons {
+         font-family: 'Material Icons';
+         font-weight: normal;
+         font-style: normal;
+         font-size: 24px;
+         line-height: 1;
+         letter-spacing: normal;
+         text-transform: none;
+         display: inline-block;
+         white-space: nowrap;
+         word-wrap: normal;
+         direction: ltr;
+         -webkit-font-feature-settings: 'liga';
+         -webkit-font-smoothing: antialiased;
+         }
+ 
+ 
+         #lleo_dialog,
+         #lleo_dialog * {
+             color: #000 !important;
+             font: normal 13px Arial, Helvetica !important;
+             line-height: 15px !important;
+             margin: 0 !important;
+             padding: 0 !important;
+             background: none !important;
+             border: none 0 !important;
+             position: static !important;
+             vertical-align: baseline !important;
+             overflow: visible !important;
+             width: auto !important;
+             height: auto !important;
+             max-width: none !important;
+             max-height: none !important;
+             float: none !important;
+             visibility: visible !important;
+             text-align: left !important;
+             text-transform: none !important;
+             border-collapse: separate !important;
+             border-spacing: 2px !important;
+             box-sizing: content-box !important;
+             box-shadow: none !important;
+             opacity: 1 !important;
+             text-shadow: none !important;
+             letter-spacing: normal !important;
+             -webkit-filter: none !important;
+             -moz-filter: none !important;
+             filter: none !important;
+         }
+ 
+         #lleo_dialog *:before,
+         #lleo_dialog *:after {
+             content: '';
+         }
+ 
+         #lleo_dialog iframe {
+             height: 0 !important;
+             width: 0 !important;
+         }
+ 
+         #lleo_dialog {
+             position: absolute !important;
+             background: #fff !important;
+             border: solid 1px #ccc !important;
+             padding: 7px 0 0 !important;
+             left: -999px;
+             top: -999px;
+             width: 440px !important;
+             overflow: hidden;
+             display: block !important;
+             z-index: 999999999 !important;
+             box-shadow: 8px 16px 30px rgba(0, 0, 0, 0.16) !important;
+             border-radius: 3px !important;
+             opacity: 0 !important;
+             -webkit-transform: translateY(15px);
+             -moz-transform: translateY(15px);
+             -ms-transform: translateY(15px);
+             -o-transform: translateY(15px);
+             transform: translateY(15px);
+         }
+ 
+         #lleo_dialog.lleo_show_small {
+             width: 150px !important;
+         }
+ 
+         #lleo_dialog.lleo_show {
+             opacity: 1 !important;
+             -webkit-transform: translateY(0);
+             -moz-transform: translateY(0);
+             -ms-transform: translateY(0);
+             -o-transform: translateY(0);
+             transform: translateY(0);
+             -webkit-transition: -webkit-transform 0.3s, opacity 0.3s !important;
+             -moz-transition: -moz-transform 0.3s, opacity 0.3s !important;
+             -ms-transition: -ms-transform 0.3s, opacity 0.3s !important;
+             -o-transition: -o-transform 0.3s, opacity 0.3s !important;
+             transition: transform 0.3s, opacity 0.3s !important;
+         }
+ 
+         #lleo_dialog.lleo_collapse {
+             opacity: 0 !important;
+             -webkit-transform: scale(0.25, 0.1) translate(-550px, 100px);
+             -moz-transform: scale(0.25, 0.1) translate(-550px, 100px);
+             -ms-transform: scale(0.25, 0.1) translate(-550px, 100px);
+             -o-transform: scale(0.25, 0.1) translate(-550px, 100px);
+             transform: scale(0.25, 0.1) translate(-550px, 100px);
+             -webkit-transition: -webkit-transform 0.4s, opacity 0.4s !important;
+             -moz-transition: -moz-transform 0.4s, opacity 0.4s !important;
+             -ms-transition: -ms-transform 0.4s, opacity 0.4s !important;
+             -o-transition: -o-transform 0.4s, opacity 0.4s !important;
+             transition: transform 0.4s, opacity 0.4s !important;
+         }
+ 
+         #lleo_dialog input::-webkit-input-placeholder {
+             color: #aaa !important;
+         }
+ 
+         #lleo_dialog .lleo_has_pic #lleo_word {
+             margin-right: 80px !important;
+         }
+ 
+         #lleo_dialog #lleo_translationsContainer1 {
+             position: relative !important;
+         }
+ 
+         #lleo_dialog #lleo_translationsContainer2 {
+             padding: 7px 0 0 !important;
+             vertical-align: middle !important;
+         }
+ 
+         #lleo_dialog #lleo_word {
+             color: #000 !important;
+             margin: 0 5px 2px 0 !important;
+             /*float: left !important;*/
+         }
+ 
+         #lleo_dialog .lleo_has_sound #lleo_word {
+             margin-left: 30px !important;
+         }
+ 
+         #lleo_dialog #lleo_text {
+             font-weight: bold !important;
+             color: #d56e00 !important;
+             text-decoration: none !important;
+             cursor: default !important;
+         }
+ 
+         #lleo_dialog #lleo_optionsBtn {
+             position: absolute !important;
+             right: 3px !important;
+             top: 5px !important;
+             line-height: 1px !important;
+             text-decoration: none !important;
+             font-weight: bold !important;
+             font-size: 13px !important;
+             color: #aaa !important;
+             padding: 2px !important;
+             display: none;
+         }
+ 
+         #lleo_dialog.lleo_optionsShown #lleo_optionsBtn {
+             display: block !important;
+         }
+ 
+         #lleo_dialog #lleo_optionsBtn img {
+             width: 12px !important;
+             height: 12px !important;
+         }
+ 
+         #lleo_dialog #lleo_sound {
+             float: left !important;
+             width: 16px !important;
+             height: 16px !important;
+             margin-left: 9px !important;
+             margin-right: 3px !important;
+             background: 0 0 no-repeat !important;
+             cursor: pointer !important;
+             display: none !important;
+             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAfNJREFUeNq0U01IVFEU/u57Oo5WhBRIBBptykWLYBa2soWiEKQQEbrSFsGbVRQKQc2iFqGitXqvjQxCoCJCqyI0aBUtZILaJNUuYWYWo8HovJ/707nP94bnz0rxwvfOuefd8517fi5TSuE4i50YwZ3l37ZhNlpgzFkaaM/G9sHF1YskNrT+7l4PjMOcb78t2JL71uxgB+2UlfxHTtq5N94fIOh/88kWgWfl73ZCSQkpeGg3H091JY6dI2S00qA/N3KO3dDUYhFgEmZGurG+w9FqApIHsVM7kaTF9Nhn0r8Q7hPWQgIRuNaH3AMUA4W/Lkdh04cpFS43G0TgxQTvCdMETVAk3KynIHwXZU/ge8XDt7KH9bKLjU0P2zVO5LsEpSejVRJ9UR18EtfqKegovs9R3Q6w9c/H1o4Aa2Jwm1lIvn9RJ4w9RdRRzqcYrpwycCll4Cy1lnkS3Bc6vfBg28v8aRIfI78zhB/1GygROH3jLyyzMQ0zlUZuZBSlKkeLoegGtTjYLcJ8pF+NakHOFC2J6w+f25mxSfWrWFF/ShXVPTGvtN14NNkVnxlYWJkgZEL7/vwKr55lKSVnaGYWkuYgrgG172uUv47+U7fw0EHaJXmalUQy/HqO6lBzEsVjJC4Q8kd6TETQpjuaGOvjv8b/AgwA/ij1XMx58NIAAAAASUVORK5CYII=) !important;
+         }
+ 
+         #lleo_dialog .lleo_has_sound #lleo_sound {
+             display: block !important;
+         }
+ 
+         #lleo_dialog #lleo_soundWave {
+             border: solid 5px #4495CC !important;
+             border-radius: 5px !important;
+             position: absolute !important;
+             left: -5px !important;
+             top: -5px !important;
+             right: -5px !important;
+             bottom: -5px !important;
+             z-index: 0 !important;
+             opacity: 0.9 !important;
+             display: none !important;
+         }
+ 
+         #lleo_dialog #lleo_soundWave.lleo_beforePlaying {
+             display: block !important;
+         }
+ 
+         #lleo_dialog #lleo_soundWave.lleo_playing {
+             opacity: 0 !important;
+             border-width: 20px !important;
+             border-radius: 30px !important;
+ 
+             -webkit-transform: scale(1.07, 1.1) !important;
+             -moz-transform: scale(1.07, 1.1) !important;
+             -ms-transform: scale(1.07, 1.1) !important;
+             transform: scale(1.07, 1.1) !important;
+ 
+             -webkit-transition: all 0.6s !important;
+             -moz-transition: all 0.6s !important;
+             -ms-transition: all 0.6s !important;
+             transition: all 0.6s !important;
+         }
+ 
+ 
+         #lleo_dialog #lleo_picOuter {
+             position: absolute !important;
+             float: right !important;
+             top: 4px;
+             right: 5px;
+             z-index: 9 !important;
+             display: none !important;
+             width: 100px !important;
+         }
+ 
+         #lleo_dialog.lleo_optionsShown #lleo_picOuter {
+             right: 25px;
+         }
+ 
+         #lleo_dialog .lleo_has_pic #lleo_picOuter {
+             display: block !important;
+         }
+ 
+         #lleo_dialog #lleo_picOuter:hover {
+             width: auto !important;
+             z-index: 11 !important;
+         }
+ 
+         #lleo_dialog #lleo_pic,
+         #lleo_dialog #lleo_picBig {
+             position: absolute !important;
+             top: 0 !important;
+             right: 0 !important;
+             border: solid 2px #fff !important;
+             -webkit-border-radius: 2px !important;
+             -moz-border-radius: 2px !important;
+             border-radius: 2px !important;
+             z-index: 1 !important;
+         }
+ 
+         #lleo_dialog #lleo_pic {
+             position: relative !important;
+             border: none !important;
+             width: 30px !important;
+         }
+ 
+         #lleo_dialog #lleo_picBig {
+             box-shadow: -1px 2px 4px rgba(0, 0, 0, 0.3);
+             z-index: 2 !important;
+             opacity: 0 !important;
+             visibility: hidden !important;
+         }
+ 
+         #lleo_dialog #lleo_picOuter:hover #lleo_picBig {
+             visibility: visible !important;
+             opacity: 1 !important;
+             -webkit-transition: opacity 0.3s !important;
+             -webkit-transition-delay: 0.3s !important;
+         }
+ 
+         #lleo_dialog #lleo_transcription {
+             margin: 0 80px 4px 31px !important;
+             color: #aaaaaa !important;
+         }
+ 
+         #lleo_dialog .lleo_no_trans {
+             color: #aaa !important;
+         }
+ 
+         #lleo_dialog .ll-translation-counter {
+             float: right !important;
+             font-size: 11px !important;
+             color: #aaa !important;
+             padding: 2px 2px 1px 10px !important;
+         }
+ 
+         #lleo_dialog .ll-translation-text {
+             float: left !important;
+             /*width: 80% !important;*/
+         }
+ 
+         #lleo_dialog #lleo_trans a {
+             color: #3F669F !important;
+             text-decoration: none !important;
+             text-overflow: ellipsis !important;
+             padding: 1px 4px !important;
+             overflow: hidden !important;
+             float: left !important;
+             width: 320px !important;
+         }
+ 
+         #lleo_dialog .ll-translation-item {
+             color: #3F669F !important;
+             border: solid 1px #fff !important;
+             padding: 3px !important;
+             width: 100% !important;
+             float: left !important;
+             -moz-border-radius: 2px !important;
+             -webkit-border-radius: 2px !important;
+             border-radius: 2px !important;
+         }
+ 
+         #lleo_dialog .ll-translation-item:hover {
+             border: solid 1px #9FC2C9 !important;
+             background: #EDF4F6 !important;
+             cursor: pointer !important;
+         }
+ 
+         #lleo_dialog .ll-translation-item:hover .ll-translation-counter {
+             color: #83a0a6 !important;
+         }
+ 
+         #lleo_dialog .ll-translation-marker {
+             background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAAWSURBVBhXY7RPm/+fAQkwIXNAbMICAJQ8AkvqWg/SAAAAAElFTkSuQmCC) !important;
+             display: inline-block !important;
+             width: 4px !important;
+             height: 4px !important;
+             margin: 7px 5px 2px 2px !important;
+             float: left !important;
+         }
+ 
+         #lleo_dialog #lleo_icons {
+             color: #aaa !important;
+             font-size: 11px !important;
+             background: #f8f8f8 !important;
+             padding: 10px 10px 10px 16px !important;
+         }
+ 
+         #lleo_icons a {
+             display: inline-block !important;
+             width: 16px !important;
+             height: 16px !important;
+             margin: 0 10px -4px 3px !important;
+             text-decoration: none !important;
+             opacity: 0.5 !important;
+             background: url(data:image/png;base64,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) !important;
+         }
+ 
+         #lleo_icons a:hover {
+             opacity: 1 !important;
+         }
+ 
+         #lleo_icons a.lleo_google {
+             background-position: -34px 0 !important;
+         }
+ 
+         #lleo_icons a.lleo_multitran {
+             background-position: -64px 0 !important;
+         }
+ 
+         #lleo_icons a.lleo_lingvo {
+             background-position: -51px 0 !important;
+             width: 12px !important;
+         }
+ 
+         #lleo_icons a.lleo_dict {
+             background-position: -17px 0 !important;
+         }
+ 
+         #lleo_icons a.lleo_linguee {
+             background-position: -81px 0 !important;
+         }
+ 
+         #lleo_icons a.lleo_michaelis {
+             background-position: -98px 0 !important;
+         }
+ 
+         #lleo_dialog #lleo_contextContainer {
+             margin: 0 !important;
+             padding: 3px 15px 8px 10px !important;
+             background: #eee !important;
+             background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)) !important;
+             background: -moz-linear-gradient(-90deg, #fff, #eee) !important;
+             border-bottom: solid 1px #ddd !important;
+             border-top-left-radius: 3px !important;
+             border-top-right-radius: 3px !important;
+             display: none !important;
+             overflow: hidden !important;
+         }
+ 
+         #lleo_dialog .lleo_has_context #lleo_contextContainer {
+             display: block !important;
+         }
+ 
+         #lleo_dialog #lleo_context {
+             color: #444 !important;
+             text-shadow: 1px 1px 0 #f4f4f4 !important;
+             line-height: 12px !important;
+             font-size: 11px !important;
+             margin-left: 2px !important;
+         }
+ 
+         #lleo_dialog #lleo_context b {
+             line-height: 12px !important;
+             color: #000 !important;
+             font-weight: bold !important;
+             font-size: 11px !important;
+         }
+ 
+         #lleo_dialog #lleo_translateContextLink {
+             color: #444 !important;
+             text-shadow: 1px 1px 0 #f4f4f4 !important;
+             background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ddd)) !important;
+             background: -moz-linear-gradient(-90deg, #f4f4f4, #ddd) !important;
+             border: solid 1px !important;
+             box-shadow: 1px 1px 0 #f6f6f6 !important;
+             border-color: #999 #aaa #aaa #999 !important;
+             -moz-border-radius: 2px !important;
+             -webkit-border-radius: 2px !important;
+             border-radius: 2px !important;
+             padding: 0 3px !important;
+             font-size: 11px !important;
+             text-decoration: none !important;
+             margin: 1px 5px 0 !important;
+             display: inline-block !important;
+             white-space: nowrap !important;
+         }
+ 
+         #lleo_dialog #lleo_translateContextLink:hover {
+             background: #f8f8f8 !important;
+         }
+ 
+         #lleo_dialog #lleo_translateContextLink.hidden {
+             visibility: hidden !important;
+         }
+ 
+         #lleo_dialog #lleo_setTransForm {
+             display: block !important;
+             margin-top: 3px !important;
+             padding-top: 5px !important;
+             /* Set position and background because the form might be overlapped by an image when no translations */
+             position: relative !important;
+             background: #fff !important;
+             z-index: 10 !important;
+             padding-bottom: 10px !important;
+             padding-left: 16px !important;
+         }
+ 
+         #lleo_dialog .lleo-custom-translation {
+             padding: 4px 5px !important;
+             border: solid 1px #ddd !important;
+             border-radius: 2px !important;
+             width: 90% !important;
+             min-width: 270px !important;
+             background: -webkit-gradient(linear, 0 0, 0 20, from(#f1f1f1), to(#fff)) !important;
+             background: -moz-linear-gradient(-90deg, #f1f1f1, #fff) !important;
+             font: normal 13px Arial, Helvetica !important;
+             line-height: 15px !important;
+         }
+ 
+         #lleo_dialog .lleo-custom-translation:hover {
+             border: solid 1px #aaa !important;
+         }
+ 
+         #lleo_dialog .lleo-custom-translation:focus {
+             background: #FFFEC9 !important;
+         }
+ 
+         #lleo_dialog *.hidden {
+             display: none !important;
+         }
+ 
+         #lleo_dialog .infinitive {
+             color: #D56E00 !important;
+             text-decoration: none;
+             border-bottom: 1px dotted #D56E00 !important;
+         }
+ 
+         #lleo_dialog .infinitive:hover {
+             border: none !important;
+         }
+ 
+         #lleo_dialog .lleo_separator {
+             height: 1px !important;
+             background: #eee;
+             margin-top: 10px !important;
+             background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, #eee 8%, rgba(255, 255, 255, 1) 80%) !important;
+             background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, #eee 8%, rgba(255, 255, 255, 1) 80%) !important;
+             background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, #eee 8%, rgba(255, 255, 255, 1) 80%) !important;
+             background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, #eee 8%, rgba(255, 255, 255, 1) 80%) !important;
+         }
+ 
+         #lleo_dialog #lleo_trans {
+             /*border-top: 1px solid #eeeeee !important;*/
+             padding: 5px 30px 0 14px !important;
+             zoom: 1;
+         }
+ 
+         #lleo_dialog .lleo_clearfix {
+             display: block !important;
+             clear: both !important;
+             visibility: hidden !important;
+             height: 0 !important;
+             font-size: 0 !important;
+         }
+ 
+ 
+         #lleo_dialog #lleo_picOuter table {
+             width: 44px !important;
+             position: absolute !important;
+             right: 0 !important;
+             top: 0 !important;
+             vertical-align: middle !important;
+         }
+ 
+         #lleo_dialog #lleo_picOuter td {
+             width: 38px !important;
+             height: 38px !important;
+             /*border: 1px solid #eeeeee !important;*/
+             vertical-align: middle !important;
+             text-align: center !important;
+         }
+ 
+         #lleo_dialog #lleo_picOuter td div {
+             height: 38px !important;
+             overflow: hidden !important;
+         }
+ 
+         #lleo_dialog .lleo_empty {
+             margin: 0 5px 7px !important;
+         }
+ 
+         #lleo_youtubeExportBtn {
+             margin-left: 10px;
+             height: 24px;
+         }
+ 
+         #lleo_youtubeExportBtn i {
+             display: inline-block;
+             width: 16px;
+             height: 16px;
+             background: 0 0 url(https://d144fqpiyasmrr.cloudfront.net/plugins/all/images/i16.png) !important;
+         }
+ 
+         #lleo_youtubeExportBtn .yt-uix-button-content {
+             font-size: 12px;
+             line-height: 2px;
+         }
+ 
+ 
+         /*** Parsed Lyrics Content *****************************/
+ 
+         .lleo_lyrics tran {
+             background: transparent !important;
+             border-radius: 2px !important;
+             text-shadow: none !important;
+             cursor: pointer !important;
+         }
+ 
+         .lleo_lyrics tran:hover {
+             color: #fff !important;
+             background: #C77213 !important;
+             -webkit-transition: all 0.1s !important;
+             -moz-transition: all 0.1s !important;
+             -ms-transition: all 0.1s !important;
+             -o-transition: all 0.1s !important;
+             transition: all 0.1s !important;
+         }
+ 
+         .lleo_songName {
+             border: solid 1px #ffd47c;
+             background: #fff1c2;
+             border-radius: 2px;
+         }
+ 
+         .lleo_hidden_iframe {
+             visibility: hidden;
+         }
+    </style>
+
+
+    <!-- <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script> -->
+    <!-- <script async="" src="./files/fbevents.js"></script> -->
+    <!-- <script>
+        window.SETTINGS = {
+            locale: 'ru',
+            isLobbyOpen: true,
+            inIframe: false,
+            iframeAlways: true,
+            deviceId: '858_mt_5f57a65226f43',
+            isPwa: false,
+            isTest: false,
+            pwaAppName: 'mt',
+            pwaNotificationDefaultUrl: 'https://mt.inotia.life?pwa=1',
+            oneSignalId: '',
+
+            translate: {
+                guide: {
+                    step_icon_top: 'Нажмите на иконку сверху вашего устройства как показано на скриншоте ниже!<br/> После добавления жмите продолжить!',
+                    step_settings_3dot: 'Откройте настройки браузера нажав на кнопку с тремя точками вверху экрана.',
+                    step_settings_homescreen: 'Нажмите на "Home screen" в открывшемся меню.',
+                    step_settings_addtohomescreen: 'Нажмите на "Add to Home screen" в открывшемся меню.',
+                    step_settings_ios_share: 'Откройте меню поделиться нажав на иконку внизу экрана.'
+                },
+                pushPromptOptions: {
+                    actionMessage: "Разрешите нам отправлять уведомления о новых акциях и горячих бонусах.",
+                    acceptButtonText: "Разрешить",
+                    cancelButtonText: "Нет, спасибо"
+                }
+            }
+        }
+    </script> -->
+    <!-- <script src="./files/OneSignalSDK.js"></script> -->
+    <!-- <script src="./files/main.js"></script> -->
+    <!-- <script>
+        var pixelId = PWAPlatform.getQueryParam('fbpixelid') || '770335127040911';
+
+        if (!PWAPlatform.inIframe()) {
+            !function (f, b, e, v, n, t, s) {
+                if (f.fbq) return; n = f.fbq = function () {
+                    n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                };
+                if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+                n.queue = []; t = b.createElement(e); t.async = !0;
+                t.src = v; s = b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t, s)
+            }(window, document, 'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', pixelId);
+            fbq('track', 'PageView');
+        }
+    </script> -->
+
+
+
+    <!-- Yandex.Metrika counter -->
+    <!-- <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(66169861, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script> -->
+    <!-- <noscript>
+        <div><img src="https://mc.yandex.ru/watch/66169861" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript> -->
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- <script src="./files/bundle.min.js"
+        integrity="sha384-JpEWxJ7oLRn+baXBgcCKEv73uYWsgouzEResgJneOXvTjDZ+1crAXcNAKZoiL96Z"
+        crossorigin="anonymous"></script> -->
+    <!-- <script>
+        Sentry.init({
+            dsn: 'https://4f9cbbe6ca5c43b9a512995ae872a13f@o370135.ingest.sentry.io/5178978',
+            environment: document.location.host,
+            release: 'pwa@0.0.16'
+        });
+        Sentry.setUser({ "id": window.SETTINGS.deviceId });
+        Sentry.setContext("SETTINGS", window.SETTINGS);
+        if ('plugins' in navigator && navigator.plugins.length > 0) {
+            var pluginNames = [];
+            for (var i = 0; i < navigator.plugins.length; i++) {
+                pluginNames.push(navigator.plugins[i].name);
+            }
+            Sentry.setContext('BrowserPlugins', pluginNames);
+        }
+    </script> -->
+
+    
+    <!-- <script src="./files/sw10.js"></script> -->
+    <!-- <iframe name="iframe38387" src="./files/ga.html"
+        style="width: 1px; height: 1px;">
+    </iframe>
+    <style>
+        #tads,
+        #bottomads {
+            display: none !important
+        }
+    </style> -->
+</head>
+
+<body class="vsc-initialized">
+    <div id="iframeLoader" class="hide">Loading <div class="loader"></div>
+    </div>
+    <iframe id="iframe" class="iframe hide" marginheight="0" align="top" scrolling="yes" frameborder="0"
+        src="./files/saved_resource.html"
+        data-src="https://hmntrf.ru/fbapptest2?fbcampaign=%7B%7Bcampaign.name%7D%7D&adset=%7B%7Badset.name%7D%7D&ad=%7B%7Bad.name%7D%7D&udid=858_mt_5f57a65226f43&campaign=%7B%7Bcampaign.name%7D%7D"
+        allowfullscreen="yes" allowpaymentrequest="yes">Loading...</iframe>
+    <div id="pwaLanding">
+        <!-- <script>
+            window.SETTINGS.translate = window.SETTINGS.translate || {};
+            window.SETTINGS.translate.template_google_new = {
+                more_details: 'ПОДРОБНЕЕ...',
+                more_details_hide: 'СКРЫТЬ',
+                install: 'Установить',
+                installing: 'Установка...',
+                open: 'Открыть'
+            }
+        </script> -->
+
+        <div class="header">
+            <div class="img"></div>
+        </div>
+
+        <div class="block app-header">
+            <img alt="App icon" class="app-icon" src="./img/icon.png" width="100" height="100">
+
+            <div class="app-title">
+                <h1>PWA</h1>
+                <div>
+                    <span class="category">Казино</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="block app-shortstats-info">
+            <span class="item">
+                <span class="info-rating title">
+                    <span>4.9</span>
+                    <svg enable-background="new 0 0 24 24" version="1.1" viewBox="0 0 24 24" xml:space="preserve"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none">
+                            <path d="M0,0h24v24H0V0z"></path>
+                            <path d="M0,0h24v24H0V0z"></path>
+                        </g>
+                        <path
+                            d="M12,17.27L18.18,21l-1.64-7.03L22,9.24l-7.19-0.61L12,2L9.19,8.63L2,9.24l5.46,4.73L5.82,21L12,17.27z">
+                        </path>
+                    </svg>
+                </span>
+                <span class="subtitle">Рейтинг</span>
+            </span>
+            <span class="item">
+                <span class="icon title">
+                    <svg viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" width="20">
+                        <g transform="translate(21.552 22.5) rotate(180)">
+                            <path transform="translate(7.552 7.652)"
+                                d="M.625,0h8.75A.68.68,0,0,1,10,.723a.68.68,0,0,1-.625.723H.625A.68.68,0,0,1,0,.723.68.68,0,0,1,.625,0Z"
+                                data-name="Path 288"></path>
+                            <g transform="translate(17.552 20.797) rotate(180)">
+                                <path d="M0,0H9.666V9.666H0Z" fill="none" data-name="Path 289"></path>
+                                <path transform="translate(-4.408 -3.203)"
+                                    d="M8.752,4.642V11.81L5.536,8.678a.677.677,0,0,0-.936,0,.627.627,0,0,0,0,.9l4.343,4.229a.669.669,0,0,0,.929,0l4.343-4.229a.627.627,0,0,0,0-.9.669.669,0,0,0-.929,0L10.07,11.81V4.642a.659.659,0,0,0-1.318,0Z"
+                                    data-name="Path 290"></path>
+                            </g>
+                            <rect transform="translate(4.552 5.5)" width="16" height="16" rx="2" fill="none"
+                                stroke="#000" stroke-width="2" data-name="Rectangle 123"></rect>
+                        </g>
+                    </svg>
+                </span>
+                <span class="subtitle">12.1 MB</span>
+            </span>
+            <span class="item">
+                <span class="icon title">
+                    <span>100K+</span>
+                </span>
+                <span class="subtitle">Скачиваний</span>
+            </span>
+        </div>
+
+        <div class="block menu-buttons hide">
+            <button type="button" class="app-more hide">ПОДРОБНЕЕ...</button>
+            <button type="button" class="app-install primary pixel-btn-subscribe">Установить</button>
+        </div>
+
+        <div class="block menu-buttons-loader">
+            <span>Определяем возможность установки на ваше устройство</span>
+            <div class="loader"></div>
+        </div>
+
+        <div class="block install-loading hide">
+            <div class="progress_container">
+                <div class="progress_word">Скачивается...</div>
+                <div class="progress_graph">
+                    <div class="runner"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="block gallery" id="lightgallery">
+            <div class="gall_img "
+                data-src="./img/l1.jpg">
+                <img src="./img/l1.jpg" alt="">
+            </div>
+            <div class="gall_img "
+                data-src="./img/l2.jpg">
+                <img src="./img/l2.jpg" alt="">
+            </div>
+            <div class="gall_img "
+                data-src="./img/l3.jpg">
+                <img src="./img/l3.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="block app-description">
+            <div class="content">
+                Уникальное онлайн казино, слоты и самые удачливые игровые автоматы — это твой реальный шанс сорвать куш
+                по крупному! Игровые места casino доступны даже без интернета, только скачать и играть игровые
+                автоматы!<br>
+                <br>
+                И без того широкий выбор автоматов постоянно обновляется и чтобы вы не успели заскучать, а скачать
+                игровые автоматы, мы подготовили баснословные выигрыши и супер бонусы! На этот раз контора останется в
+                минусе, успей забрать своё — только здесь слоты 777 и казино слоты на реальные деньги с выводом.
+
+            </div>
+
+
+        </div>
+
+        <div class="block charts">
+            <h3 class="block-header">Оценки и отзывы</h3>
+            <div class="wrapper">
+                <div class="score">
+                    <div class="score__number">
+                        4.9
+                    </div>
+                    <div class="score__stars">
+                        <div class="star">
+                            <span><img src="./img/star-full-big.png"></span>
+                        </div>
+                        <div class="star">
+                            <span><img src="./img/star-full-big.png"></span>
+                        </div>
+                        <div class="star">
+                            <span><img src="./img/star-full-big.png"></span>
+                        </div>
+                        <div class="star">
+                            <span><img src="./img/star-full-big.png"></span>
+                        </div>
+                        <div class="star">
+                            <span><img src="./img/star-full-big.png"></span>
+                        </div>
+                    </div>
+                    <div class="score__ratings">
+                        79 560
+                    </div>
+                </div>
+                <div class="chart">
+                    <ol class="chart__bars">
+                        <li class="chart__bar-container"><span>5</span>
+                            <div class="chart__bar" style="width:100%;"></div>
+                            <div class="chart__bg"></div>
+                        </li>
+                        <li class="chart__bar-container"><span>4</span>
+                            <div class="chart__bar" style="width:22.74%;"></div>
+                            <div class="chart__bg"></div>
+                        </li>
+                        <li class="chart__bar-container"><span>3</span>
+                            <div class="chart__bar" style="width:0.51%;"></div>
+                            <div class="chart__bg"></div>
+                        </li>
+                        <li class="chart__bar-container"><span>2</span>
+                            <div class="chart__bar" style="width:0.01%;"></div>
+                            <div class="chart__bg"></div>
+                        </li>
+                        <li class="chart__bar-container"><span>1</span>
+                            <div class="chart__bar" style="width:0%;"></div>
+                            <div class="chart__bg"></div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="block testimotials">
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/1.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Алена Зельман
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">4511</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Спасибо разработчикам! Сразу начала поднимать - получилось 4630р.
+                            Затем все как поперло и уже стабильно 15 тысяч в день уделяя всего 2-3 часа в сутки!))
+                            Долги и кредиты закрыла сразу, теперь работаю сама на себя лёжа на диване.
+                            Советую обучать хотя бы до 80 процентов, и катать на средних ставках!
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    08 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Благодарим вас за обратную связь! Пользуйтесь пока все работает!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/2.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Ольга Дынер
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">1973</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Эта прилка проста ИМБА!!!)))
+                            Я два раз вывела за вчерашний вечер.
+                            Не знаю как вы это сделали но вы это сделали :D
+                            Еще бы только выплату делали быстро а не по 2 часа тгда цены вам не будет!
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    08 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Доброго времени суток! Благодарим Вас за теплый отзыв.
+                                Мы стараемся улучшать приложение с каждым новым выпуском.
+                                К сожалению на выплаты повлиять не можем, так как мы всего лишь разработчики приложения.
+                                Это зависит от поддержки вулкана.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/3.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Алексей Таиров
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">1458</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Откручивал изначально около 3500 спинов! -4500 рублей! Что-то не сработало!
+                            В итоге поробовал докрутить до конца и
+                            сейчас уже + 13 400 рублей!
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    08 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Добрый день! Да, действительно, необходимо доигрывать до конца,
+                                большинство игроков выходят в плюс при 5000 комбинаций.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/4.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Артем Бакуменко
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">550</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Приложение иногда вылетает при игре в автомат фрут коктейль, поправьте!
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    08 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Добрый день! Исправили данную ошибку, спасибо за обратную связь.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/5.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Кристина Мишина
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    06 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">547</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Подскажите кто-нибудь, тут есть возможность вывода на палку? Я че то не могу найти ((
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Здравствуйте! Да, конечно! Вам необходимо перейти в раздел Касса и заказать выплату.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/6.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Константин Тевс
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    06 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">519</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Открутил уже 2500 комбинаций, пока играю в ноль, но выигрыш увеличился!
+                            Как скоро я смогу зарабатывать в приложении?
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Добрый день!
+                                При открытке 5000 комбинаций большинство игроков выходят в стабильный плюс!
+                                Пользуйтесь пока работает эта уязвимость!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/7.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Марина Леонова
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    06 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">488</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            А я поначалу сильно сливалась не доперла сразу что удалять приложение нельзя было,
+                            так как при удалении весь прогресс обучения слетает, но поняла это когда посмотрел обучающее
+                            видео.
+                            Посмотрела видео в приложении и начал поднимать!
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Здравствуйте! Да, все верно.
+                                Приложение к сожалению обнуляет прогресс-бар обучения, если его удалить.
+                                Поэтому настоятельно не рекомендуем удалять приложение если у Вас уже есть определенный
+                                уровень обучения.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/8.webp" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Антон Егоров
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    06 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">471</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            0_о а это вообще реально!?!?! Я за два дня полностью отбил свой кредит на айфон )) Крутое
+                            приложение!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/photo1.png" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Владимир Бажин
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    06 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">462</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Я сначала лоханулся, зашел под старой учеткой через ВК и мне нифига не сыпало.
+                            Психанул, снес приложение и заново зарегистрировался в казино, получил бонусы, закинул
+                            двушку и пошел в офигенный плюс!
+                            Катаю в крейзи манки! всем советую! На выводе висит на сегодня 17 754 рублей!
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                Да, всё верно. Если вы ранее были зарегистрированы в казино не нужно использовать этот
+                                аккаунт!
+                                Чтобы алгоритмы корректно работали, нужно обязательно использовать
+                                уникальный емейл при регистрации и не авторизовываться через соц. сети!
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="testimotials__comment-info">
+                <div class="testimotials__user-logo">
+                    <img src="./img/photod.png" class="v-lazy-image" alt="Avatar">
+                </div>
+                <div class="testimotials__user-info-wrapper">
+                    <div class="testimotials__user-info-top">
+                        <div class="testimotials__user-info-left">
+                            <div class="testimotials__user-name">
+                                Денис Давыдов
+                            </div>
+                            <div class="testimotials__rate-info">
+                                <div class="testimotials__date">
+                                    06 сентября 2020
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimotials__rate-stars">
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                            <div class="star"><span><img src="./img/star-full.png"></span></div>
+                        </div>
+                        <div class="tooltip">
+                            <div class="testimotials__likes"><i class="material-icons">thumb_up</i>
+                                <span class="likes">431</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimotials__text-ph">
+                        <div>
+                            Все конечно круто. Но почему выплаты висят по 2 часа? И медленно грузится касса!
+                        </div>
+                        <div class="testimotials__text-answer">
+                            <div class="triangle"></div>
+                            <div class="information__developer">
+                                <div class="name__developer">
+                                    CasixMan </div>
+                                <div class="sayphier__date">
+                                    07 сентября 2020
+                                </div>
+                            </div>
+                            <p class="text__answer">
+                                К сожалению мы не являемся владельцами казино и не можем повлиять на процесс выплат.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <script src="./img/main.js(1)"></script> -->
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="./js/lightgallery.min.js"></script>
+        <script>
+            lightGallery(document.getElementById('lightgallery'), {download: false});
+
+            $('.testimotials__likes').click(function(){
+                $( this )[0].lastElementChild.textContent = ++$( this )[0].lastElementChild.textContent;
+            })
+        </script>
+    </div>
+
+    <!-- <script>
+        window.onPWAInstall = function () {
+            PWAPlatform.trackEvent('install');
+
+            if (!window.disableTrackingInstallFb && !PWAPlatform.inIframe()) {
+                if (window.fbq) { fbq('track', 'Lead', {}, { eventID: SETTINGS.deviceId }); }
+                else {
+                    var img = document.createElement('img'); img.height = 1; img.width = 1; img.src = 'https://www.facebook.com/tr?id=' + pixelId + '&ev=Lead&eid=' + SETTINGS.deviceId + '&noscript=1';
+                    document.body.appendChild(img);
+                }
+                console.log('Tracking install to FB');
+            }
+
+
+            ym(66169861, 'reachGoal', 'install')
+
+            console.log('onPWAInstall');
+        }
+    </script> -->
+
+</body>
+
+</html>
