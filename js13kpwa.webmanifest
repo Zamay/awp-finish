@@ -2,6 +2,13 @@
     "name": "PWA Web App",
     "short_name": "PWA",
     "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
+    "start_url": "/pwa.html",
+    "orientation": "any",
+    "background_color": "#000000",
+    "theme_color": "#000000",
+    "serviceworker": {
+      "src": "sw2.js"
+    },
     "icons": [
         {
             "src": "icons/icon-32.png",
@@ -44,8 +51,6 @@
             "type": "image/png"
         }
     ],
-    "start_url": "index.html",
-    "display": "fullscreen",
-    "theme_color": "#B12A34",
-    "background_color": "#B12A34"
+    
+    "display": "standalone"
 }
